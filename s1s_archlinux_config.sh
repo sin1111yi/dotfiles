@@ -13,17 +13,19 @@ if [ -d "$CLONES_PATH" ]; then
     mkdir -p "$HOME/Clones"
 fi
 
+sudo pacman -S git make cmake automake gcc gdb llvm clang neovim composer
+sudo pacman -S ruby jre11-openhjdk jdk11-openjdk php nodejs julia
+
+sudo pacman -S unzip wget curl npm fish
+
+sudo pacman -S rustup
+rustup toolchain install stable
+
 # install yay
 git clone https://aur.archlinux.org/yay.git
 cd "$HOME/Clones/yay/" && makepkg -si
 
 cd "$HOME" && yay -Syu
-
-sudo pacman -S make cmake automake gcc gdb llvm clang neovim composer rustup
-sudo pacman -S ruby jre11-openhjdk jdk11-openjdk php nodejs julia
-rustup toolchain install stable
-
-sudo pacman -S unzip wget curl npm fish
 
 # install kde plasma
 sudo pacman -S xorg plasma plasma-wayland-session dolphin
@@ -40,7 +42,6 @@ sudo pacman -S xclip wl-clipboard cliphist
 # install fonts
 sudo pacman -S noto-fonts noto-fonts-emoji adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts wqy-microhei wqy-microhei-lite ttf-hannom wqy-zenhei wqy-bitmapfont ttf-arphic-ukai ttf-arphic-uming noto-fonts-cjk opendesktop-fonts
 sudo pacman -S otf-codenewroman-nerd ttf-iosevka-nerd ttf-dejavu-nerd ttf-noto-nerd ttf-jetbrains-mono-nerd hack-nerd-font
-
 
 # install fcitx5
 sudo pacman -S fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-material-color
