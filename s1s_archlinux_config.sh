@@ -9,7 +9,6 @@ echo "LANG=en_US.UTF-8" > /etc/locale.conf
 
 sudo pacman -Syu
 
-
 if [ -d "$CLONES_PATH" ]; then
     mkdir -p "$HOME/Clones"
 fi
@@ -36,7 +35,7 @@ systemctl enable ly.service
 # comment the line above and uncomment this line to set sddm as dm
 # systemctl enable sddm.service
 
-sudo pacman -S xclip wl-clipboard
+sudo pacman -S xclip wl-clipboard cliphist
 
 # install fonts
 sudo pacman -S noto-fonts noto-fonts-emoji adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts wqy-microhei wqy-microhei-lite ttf-hannom wqy-zenhei wqy-bitmapfont ttf-arphic-ukai ttf-arphic-uming noto-fonts-cjk opendesktop-fonts
@@ -57,5 +56,6 @@ EOF
 # install hyprland
 yay -S gdb ninja gcc cmake meson libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols cairo pango seatd libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info cpio tomlplusplus
 yay -S xdg-desktop-protal-hyprland
-yay -S hyprland waybar ranger mako rofi alacritty swww feh grim slurp pamixer
+yay -S hyprland 
+yay -S waybar ranger mako rofi alacritty swww feh grim slurp pamixer wlogout
 yay -S microsoft-edge-stable-bin visual-studio-code-bin
