@@ -1,10 +1,9 @@
-import = [
-    "~/.config/alacritty/themes/themes/aura.toml"
-]
+import = ["~/.config/alacritty/themes/themes/aura.toml"]
 
 [window]
 dynamic_title = true
+opacity = 0.8
 
 [font]
-normal = {family = "CodeNewRoman Nerd Font Mono"}
+normal = { family = "CodeNewRoman Nerd Font Mono" }
 size = 12

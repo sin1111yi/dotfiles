@@ -58,5 +58,5 @@ EOF
 yay -S gdb ninja gcc cmake meson libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols cairo pango seatd libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info cpio tomlplusplus
 yay -S xdg-desktop-protal-hyprland
 yay -S hyprland 
-yay -S waybar ranger mako rofi alacritty swww feh grim slurp pamixer wlogout
+yay -S mpd waybar yazi mako rofi alacritty swww feh grim slurp pamixer wlogout
 yay -S microsoft-edge-stable-bin visual-studio-code-bin
